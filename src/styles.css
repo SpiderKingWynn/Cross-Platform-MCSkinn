@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+
+@layer components {
+  * {
+    @apply dark:border-gray-700;
+  }
+}
+
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  overscroll-behavior-y: none;
+  overflow: hidden;
+  position: fixed;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  -webkit-overflow-scrolling: touch;
+}
